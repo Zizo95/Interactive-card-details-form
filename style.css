@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("https://fonts.google.com/specimen/Space+Grotesk");
+}
+body{
+    font-family: "Space Grotesk";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
