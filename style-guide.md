@@ -23,7 +23,7 @@ The designs were created to the following widths:
 - Dark grayish violet: hsl(279, 6%, 55%)
 - Very dark violet: hsl(278, 68%, 11%)
 
-## Typography
+## TypographY
 
 ### Body Copy
 

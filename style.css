@@ -8,3 +8,30 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+section{
+    background-image: url("images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+}
+
+input{
+    display: block;
+    padding: 10px 6rem;
+    margin-top: 10px;
+
+}
+
+ button{
+    margin-top: 10px;
+    color:  hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 10px;
+    background: hsl(278, 68%, 11%);
+    padding: 10px 6rem;
+}
+input:focus{
+outline-color: hsl(0, 100%, 66%);
+}
+.message{
+    display: none;
+    margin-top: 10px;
+}
