@@ -1,16 +1,32 @@
 @import url("https://fonts.google.com/specimen/Space+Grotesk");
-}
+
 body{
-    font-family: "Space Grotesk";
+    font-family: inherit;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+main{
+    display: flex;
+    margin: 8rem auto;
+    color: hsl(0, 0%, 100%);
+}
 section{
     background-image: url("images/bg-main-desktop.png");
-    background-repeat: no-repeat;
+   background-repeat: no-repeat;
+   width: 30%;
+   height: 200px;
+    
 }
-
+.section{
+    margin-left: 8rem;
+}
+.front-card{
+    margin: 20px  10rem;
+}
+.back-card{
+    margin: 20px  12rem;
+}
 input{
     display: block;
     padding: 10px 6rem;
@@ -32,15 +48,9 @@ form,
     font-weight: 600;
     letter-spacing: 1px;
 }
-.form-control input,
-.btn button {
-    padding: 0.6rem 0.8rem;
-    border-radius: 0.2rem;
-    font-family: inherit;
-}
 
 .form-control input {
-    font-family: inherit;
+   
     outline: none;
     border: 1.3px solid hsl(270, 3%, 87%);
     padding: 0.4rem 0.8rem;
@@ -57,6 +67,7 @@ form,
     display: flex;
     gap: 0.6rem;
     overflow: hidden;
+    margin-top: 20px;
 }
 
 .date {
@@ -66,15 +77,6 @@ form,
     width:112px;
 }
 
-input[type=number] {
-    -moz-appearance: textfield; 
-  }
-
-  input[type=number]::-webkit-inner-spin-button,
-  input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
  button{
     margin-top: 10px;
     color:  hsl(0, 0%, 100%);
@@ -89,5 +91,9 @@ outline-color: hsl(0, 100%, 66%);
 .message{
     display: none;
     margin-top: 10px;
+}
+.invalid{
+    display: none;
+    color: hsl(0, 100%, 66%); 
 }
 

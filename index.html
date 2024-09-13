@@ -17,8 +17,9 @@
 <main>
 
   <section>
-    <img src="images/bg-card-front.png" alt="card" width="300">
-    <img src="images/bg-card-back.png" alt="" width="300">
+    <img src="images/bg-card-front.png" alt="card" width="300" class="front-card">
+    <br>
+    <img src="images/bg-card-back.png" alt="" width="300" class="back-card">
     <p>0000 0000 0000 0000</p>
     <p>Jane Appleseed</p>
     <p>00/00</p>
@@ -33,11 +34,13 @@
      
        <label for="">Card Number</label> 
       <input type="number" placeholder="e.g. 1234 5678 9123 0000"> 
+      <p class="invalid">Wrong format, numbers only</p>
      
      <div class="date-container">
     <div class="form-control date">
-      <label for="date">Exp. Date (MM/YY)</label>
+      <label for="date">Exp. Date </label>
       <input type="number" name="date" id="month" placeholder="MM">
+      <p class="invalid">Can't be blank</p>
     </div>
   
     <div class="form-control date">
@@ -48,6 +51,7 @@
          <div class="form-control cvc">
           <label for="cvc">CVC</label>
           <input type="number" name="cvc" id="cvc" placeholder="e.g. 123"> 
+          <p class="invalid">Can't be blank</p>
          </div>
       
      </div>
