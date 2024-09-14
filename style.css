@@ -8,29 +8,76 @@ body{
 }
 main{
     display: flex;
-    margin: 8rem auto;
-    color: hsl(0, 0%, 100%);
+    margin: auto;
+    background-color: hsl(0, 0%, 100%);
 }
 section{
     background-image: url("images/bg-main-desktop.png");
    background-repeat: no-repeat;
    width: 30%;
-   height: 200px;
+   height: 40rem;
     
 }
 .section{
-    margin-left: 8rem;
+    margin-left: 18rem;
+    margin-top: 8rem;
 }
 .front-card{
-    margin: 20px  10rem;
+    margin-top: 3rem;
+    margin-left: 12rem;
 }
 .back-card{
-    margin: 20px  12rem;
+    margin: 20px  15rem;
 }
+.card-logo{
+    position: relative;
+    left: 13rem;
+    top: 7rem;
+}
+.number{
+    position: relative;
+    left: 13rem;
+    bottom: 20rem;
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.name{
+    position: relative;
+    left: 13rem;
+    bottom: 20rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;  
+}
+.card-date{
+    position: relative;
+    left: 26rem;
+    bottom: 22rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.card-cvc{
+    position: relative;
+    left: 30rem;
+    bottom: 16rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.form-control label {
+    font-size: 0.66rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
 input{
     display: block;
     padding: 10px 6rem;
     margin-top: 10px;
+    margin-bottom: 15px;
 
 }
 form,
@@ -42,23 +89,13 @@ form,
     gap: 0.3rem;
 }
 
-.form-control label {
-    font-size: 0.66rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
 
 .form-control input {
-   
-    outline: none;
     border: 1.3px solid hsl(270, 3%, 87%);
     padding: 0.4rem 0.8rem;
     border-radius: 0.2rem;
 }
-.form-control input.invalid {
-    border: 1.3px solid  hsl(0, 100%, 66%); ;
-}
+
 .form-control input::placeholder{
     font-size: 0.73rem;
     font-weight: 500;
@@ -66,7 +103,6 @@ form,
 .date-container {
     display: flex;
     gap: 0.6rem;
-    overflow: hidden;
     margin-top: 20px;
 }
 
