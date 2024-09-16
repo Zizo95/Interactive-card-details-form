@@ -2,16 +2,8 @@ const continueButton = document.querySelector(".continue");
 const confirmButton = document.querySelector(".confirm");
 const invalidMessage = document.querySelectorAll(".invalid");
 const section = document.querySelector(".section");
-const cardNo = document.querySelector(".number");
-const cardName = document.querySelector(".name");
-const cardDate = doocument.querySelector(".card-date")
-const cardCvc = document.querySelector("card-cvc");
 const inputs = document.querySelectorAll("input");
-const inputName = document.querySelector("#input-name");
-const inputNo = document.querySelector("#input-no");
-const  cvc = document.querySelector("#cvc");
-const date = document.querySelector("#date");
-const year = document.querySelector("#year");
+
 
 
 inputs.forEach(input => {
@@ -23,6 +15,30 @@ inputs.forEach(input => {
   }
 })
 
-confirmButton.addEventListener("click", function(
+confirmButton.addEventListener("click", function(){
+  const cardName = document.querySelector(".number");
+  const inputName = document.querySelector("#input-name");
   
-))
+  let outputName = inputName.value;
+  cardName.innerHTML = outputName;
+
+  const cardNo = document.querySelector(".number");
+  const inputNo = document.querySelector("#input-no");
+
+  let outputNo = inputNo.value;
+  cardNo.innerHTML = outputNo;
+
+  const cardCvc = document.querySelector("card-cvc");
+  const  cvc = document.querySelector("#cvc");
+
+  let outputCvc = cvc.value;
+  cardCvc.innerHTML = outputCvc;  
+
+  const cardDate = doocument.querySelector(".card-date");
+  let date = document.querySelector("#date");
+let year = document.querySelector("#year");
+
+date += year = yearly;
+
+
+})
