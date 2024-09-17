@@ -121,6 +121,9 @@ form,
     background: hsl(278, 68%, 11%);
     padding: 10px 6rem;
 }
+button:hover{
+    cursor: pointer;
+}
 input:focus{
 outline-color: hsl(0, 100%, 66%);
 }
