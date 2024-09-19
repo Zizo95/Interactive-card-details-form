@@ -8,6 +8,9 @@ const message = document.querySelector(".message");
 
 
 confirmButton.addEventListener("click", function(){
+
+  event.preventDefault();
+  
   const cardName = document.querySelector(".name");
   const inputName = document.querySelector("#input-name");
   let outputName = inputName.value;
@@ -23,12 +26,13 @@ confirmButton.addEventListener("click", function(){
   let outputCvc = cvc.value;
   cardCvc.innerHTML = outputCvc;  
 
-  const cardDate = doocument.querySelector(".card-date");
-  let date = document.querySelector("#date");
+  const cardDate = document.querySelector(".card-date");
+  let date = document.querySelector("#month");
 let year = document.querySelector("#year");
 
-let yearlyDate = date + year;
-yearlyDate.value = cardDate.innerHTML
+let yearlyDate = `${month.value}/${year.value.slice(-2)}`;
+
+cardDate.innerHTML = yearlyDate;
 
 section.style.display = "none";
 message.style.display = "block";

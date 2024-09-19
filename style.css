@@ -129,10 +129,22 @@ outline-color: hsl(0, 100%, 66%);
 }
 .message{
     display: none;
-    margin-top: 10px;
+    margin-left: 22rem;
+    margin-top: 10rem;
+    text-align: center;
+    color: ;
 }
 .invalid{
     display: none;
     color: hsl(0, 100%, 66%); 
+}
+.message h3{
+    font-size: 2rem;
+}
+.message img{
+    margin-left: 1rem;
+}
+@media screen and (max-width : ) {
+    
 }
 
