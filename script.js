@@ -1,39 +1,46 @@
 const confirmButton = document.querySelector(".confirm");
-const invalidMessage = document.querySelectorAll(".invalid");
+const invalidMessages = document.querySelectorAll(".invalid");
 const section = document.querySelector(".section");
 const inputs = document.querySelectorAll("input");
 const message = document.querySelector(".message");
 
-
-
-
-confirmButton.addEventListener("click", function(){
-
+confirmButton.addEventListener("click", function(event) {
   event.preventDefault();
+  let allValid = true;
   
-  const cardName = document.querySelector(".name");
-  const inputName = document.querySelector("#input-name");
-  let outputName = inputName.value;
-  cardName.innerHTML = outputName;
+  inputs.forEach((input, index) => {
+    if (input.value === "") {
+      invalidMessages[index].style.display = "block";
+      allValid = false;
+    } else {
+      invalidMessages[index].style.display = "none";
+    }
+  });
 
-  const cardNo = document.querySelector(".number");
-  const inputNo = document.querySelector("#input-no");
-  let outputNo = inputNo.value;
-  cardNo.innerHTML = outputNo;
+  if (allValid) {
+    const cardName = document.querySelector(".name");
+    const inputName = document.querySelector("#input-name");
+    let outputName = inputName.value;
+    cardName.innerHTML = outputName;
 
-  const cardCvc = document.querySelector(".card-cvc");
-  const  cvc = document.querySelector("#cvc");
-  let outputCvc = cvc.value;
-  cardCvc.innerHTML = outputCvc;  
+    const cardNo = document.querySelector(".number");
+    const inputNo = document.querySelector("#input-no");
+    let outputNo = inputNo.value;
+    cardNo.innerHTML = outputNo;
 
-  const cardDate = document.querySelector(".card-date");
-  let date = document.querySelector("#month");
-let year = document.querySelector("#year");
+    const cardCvc = document.querySelector(".card-cvc");
+    const cvc = document.querySelector("#cvc");
+    let outputCvc = cvc.value;
+    cardCvc.innerHTML = outputCvc;
 
-let yearlyDate = `${month.value}/${year.value.slice(-2)}`;
+    const cardDate = document.querySelector(".card-date");
+    let month = document.querySelector("#month");
+    let year = document.querySelector("#year");
 
-cardDate.innerHTML = yearlyDate;
+    let yearlyDate = `${month.value}/${year.value.slice(-2)}`;
+    cardDate.innerHTML = yearlyDate;
 
-section.style.display = "none";
-message.style.display = "block";
-})
+    section.style.display = "none";
+    message.style.display = "block";
+  }
+});

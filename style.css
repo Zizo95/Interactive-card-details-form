@@ -16,7 +16,6 @@ section{
    background-repeat: no-repeat;
    width: 30%;
    height: 40rem;
-    
 }
 .section{
     margin-left: 18rem;
@@ -132,7 +131,7 @@ outline-color: hsl(0, 100%, 66%);
     margin-left: 22rem;
     margin-top: 10rem;
     text-align: center;
-    color: ;
+    color: hsl(279, 6%, 55%);
 }
 .invalid{
     display: none;
@@ -144,7 +143,152 @@ outline-color: hsl(0, 100%, 66%);
 .message img{
     margin-left: 1rem;
 }
-@media screen and (max-width : ) {
-    
+@media screen and (max-width:1017px ) {
+    section{
+       width: 25%;
+       height: 40rem;
+    }
+    .card-date{
+        left: 20rem;
+        bottom: 22.2rem;
+      }
+    .section{
+        margin-left: 15rem;
+    }
+    .front-card{
+        margin-top: 3rem;
+        margin-left: 6rem;
+    }
+    .back-card{
+        margin: 20px  3rem;
+    }
+    .card-cvc {
+        left: 18rem;
+        bottom: 16rem;
+    }
+    .card-logo{
+        left: 8rem;
+        top: 7rem;
+    }
+    .number{
+        left: 8rem;
+        bottom: 20rem;
+
+    }
+    .name{
+        left: 8rem;
+        bottom: 20rem;
+    }
+    input{
+        padding: 10px 4rem;
+    }
+    button{
+            padding: 10px 4rem;
+        } 
+        .message{
+            margin-left: 15rem;
+        } 
+        
+}
+@media screen and (max-width:900px ) {
+   .section{
+    margin-left: 11rem;
+   }
+   .front-card{
+    margin-top: 3rem;
+    margin-left: 6rem;
+    width: 250px;
+}
+.back-card{
+    margin: 20px  3rem;
+    width: 250px;
+}
+.card-logo{
+    left: 7rem;
+    top: 6rem;
+    width: 50px;
+}
+.number{
+    left: 7rem;
+    bottom: 18rem;
+    font-size: 1.3rem;
+}
+.name{
+    left: 7rem;
+    bottom: 18rem;
+}
+.card-cvc {
+    left: 15rem;
+    bottom: 14.7rem;
+}
+.card-date{
+  left: 18rem;
+  bottom: 20rem;
+}
 }
 
+@media screen and (max-width:800px ) {
+    main{
+        flex-direction: column;
+    }
+    section{
+       width: 50%;
+       height: 20rem;
+    }
+ .section{
+     margin-left: 1rem;
+     margin-top: 5rem;
+ } 
+ input{
+    width: fit-content;
+}
+button{
+       width: fit-content;
+       padding: 10px 8rem;
+    } 
+    .date-container input{
+        width: auto;
+    }
+    .message{
+       text-align: left;
+       margin-left: 4rem;
+       margin-top: 7rem;
+    }
+}
+
+@media screen and (max-width:377px ) {
+    section{
+        width: 90%;
+     }
+     .section{
+        margin-top: 2.5rem; 
+     }
+     .front-card{
+        margin-top: 0.5rem;
+        margin-left: 0.2rem;
+    }
+    .back-card{
+        margin: 20px  0.5rem;
+    }
+    .card-logo{
+        left: 4rem;
+        top: -100px;
+    }
+    .number{
+        left: 4rem;
+        bottom: 18rem;
+        font-size: 1rem;
+    }
+    .name{
+        left: 4rem;
+        bottom: 18rem;
+    }
+    .card-cvc {
+        left: 13rem;
+        bottom: 14rem;
+    }
+    .card-date{
+      left: 15rem;
+      bottom: 20rem;
+    }
+}
