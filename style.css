@@ -281,14 +281,14 @@ button{
     }
     .name{
         left: 4rem;
-        bottom: 18rem;
+        bottom: 17rem;
     }
     .card-cvc {
         left: 13rem;
-        bottom: 14rem;
+        bottom: 13rem;
     }
     .card-date{
       left: 15rem;
-      bottom: 20rem;
+      bottom: 19rem;
     }
 }
